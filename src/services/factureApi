@@ -1,0 +1,35 @@
+import http from './axios';
+
+class FactureService {
+  getAll() {
+    return http.get("/factures");
+  }
+
+  getFactureByReference(reference) {
+    return http.get(`/factures/reference/${reference}`);
+  }
+
+  get(id) {
+    return http.get(`/factures/${id}`);
+  }
+  
+  create(data) {
+    return http.post("/factures", data);
+  }
+
+  update(id, data) {
+    return http.put(`/factures/${id}`, data); 
+
+  }
+
+  delete(id) {
+    return http.delete(`/factures/${id}`);
+  }
+
+  deleteAll() {
+    return http.delete("/factures");
+  }
+  
+}
+
+export default new FactureService();

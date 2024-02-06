@@ -41,16 +41,10 @@
   
   <style scoped>
   footer {
-    position: fixed; 
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 0.5em 0;
-    font-size: 0.8em; 
-    z-index: 10;
+    font-size: 0.7em; 
 }
   </style>
   

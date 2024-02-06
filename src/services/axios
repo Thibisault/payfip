@@ -1,0 +1,9 @@
+// src/services/axios.js
+import axios from 'axios';
+
+export default axios.create({
+  baseURL: "http://localhost:8081/api", // URL de base de l'API Spring Boot
+  headers: {
+    "Content-type": "application/json"
+  }
+});
